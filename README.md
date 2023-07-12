@@ -1,2 +1,2 @@
 # meal_recipes
-Project for a recipe website on odins using HTML and CSS
+This project for a recipe website that showcases a delightful collection of recipes for varoius cuisines and occasions built using HTML and CSS.
