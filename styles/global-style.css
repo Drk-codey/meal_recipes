@@ -1,0 +1,198 @@
+:root {
+  --primary: #8fb3ff;
+  --secondary: #f7d2b5;
+  --accent: #c96818;
+  --blackColor: #000000;
+  --textColor: #979797;
+  --whiteColor: #fff;
+  --boxShadow: rgba(64,25,109,.07);
+  --cta: rgba(64, 25, 109, 0.11);
+  --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+*, 
+*::before, 
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* color: var(--whiteColor); */
+}
+
+.active {
+  color: var(--primary);
+}
+
+div#content {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--secondary);
+}
+
+#header {
+  width: 100%;
+  padding: 15px 29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent);
+}
+
+#nav ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+ul li {
+  padding: 10px 10px;
+  /* border: 1px solid; */
+  margin-left: 18px;
+  font-size: 21px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* ul li:hover {
+
+} */
+
+#hero {
+  height: 85vh;
+  position: relative;
+}
+
+#hero .heading {
+  width: 70%;
+  max-width: 900px;
+  border: 1px solid;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  margin: auto;
+}
+
+#hero h1 {
+  font-size: 45px;
+  line-height: 1.2;
+  word-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 20px;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn-container button {
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--whiteColor);
+  background-color: var(--cta);
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+}
+
+#details {
+  width: 50%;
+  max-width: 700px;
+  border: 1px solid;
+  position: relative;
+  top: 300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  /* From https://css.glass */
+  background: rgba(221, 0, 83, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(221, 0, 83, 0.3);
+}
+
+/*____MenuPage Styling____*/
+.hero {
+  margin-block: 23px;
+}
+
+.hero h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.menu-container {
+  border: 1px solid ;
+}
+
+h1.menu-type {
+  display: block;
+  /* font-size: 40px; */
+  text-align: center;
+  margin-bottom: 20px;
+  /* border: 1px solid; */
+}
+
+.meals {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid; */
+}
+
+.meal-box {
+  width: 31%;
+  max-width: 480px;
+  padding: 20px;
+  border-radius: 20px;
+  /* From https://css.glass */
+  background: rgba(201, 104, 24, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(201, 104, 24, 0.27);
+}
+
+.meal-box h3 {
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.meal-box p {
+  text-align: center;
+}
+
+
+/*____ContactPage Styling____*/
+.contact-container {
+  width: 75%;
+  max-width: 900px;
+  margin: auto;
+  padding:  50px;
+  background: rgba(201, 104, 24, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(201, 104, 24, 0.27);
+}
+
+
+form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15px;
+}
