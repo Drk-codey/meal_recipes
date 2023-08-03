@@ -1,8 +1,8 @@
 // Import the page-load module and call it
 import { initializePage } from './page-load.js'
-import { homePage } from './home.js';
+import { homePage } from './modules/home.js';
 import { menuPage } from './menu.js';
-import { contactPage } from './contact.js';
+import { contactPage } from './modules/contact.js';
 
 init();
 
@@ -20,6 +20,8 @@ function addNavEvents() {
 
 function init() {
   initializePage();
-  homePage();
+  // homePage();
+  // menuPage()
+  contactPage();
   addNavEvents();
 }

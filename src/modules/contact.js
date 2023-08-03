@@ -9,7 +9,10 @@ function contactPage() {
       
       <div class="contact-container">
         <div id="cntDetail">
-          <p>123 Savory Street, Aromaland, Lagos, Nigeria</p>
+          <p>
+            <span><img id="addressIcon"><span>
+            123 Savory Street, Aromaland, Lagos, Nigeria
+          </p>
           <p><span class="day">Mon-Thurs:</span>8am-8pm</p>
           <p><span class="day">Fri-Sun</span>8am-11pm</p>
           <p>08059997903</p>
@@ -25,6 +28,7 @@ function contactPage() {
       </div>
     </section>
   `
+  
 
   return contentContainer;
 }

@@ -36,5 +36,13 @@ function homePage() {
   return contentContainer;
 }
 
+// function setBtnActive(id) {
+//   const activeBtn = document.querySelector('.tab.active');
+//   if (activeBtn) activeBtn.classList.remove('active');
+
+//   const homeBtn = document.getElementById(id);
+//   homeBtn.classList.add('active');
+// }
+
 // Export function to use on other mudule
 export { homePage };
