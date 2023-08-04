@@ -12,6 +12,7 @@
   --boxShadow: rgba(64,25,109,.07);
   --cta: rgba(64, 25, 109, 0.11);
   --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --bgColor: rgba(201, 104, 24, 0.24);
 }
 
 *, 
@@ -35,21 +36,28 @@ body {
 div#content {
   width: 100%;
   min-height: 100vh;
-  /* background-image: url('img/city-daylight.jpg');
+  background-image: url('./img/city-daylight.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; */
+  background-size: cover;
   background-color: var(--secondary);
 }
 
 #header {
   width: 100%;
+  background-color: var(--accent);
+}
+
+#nav {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
   padding: 15px 29px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--accent);
+  border: 1px solid;
 }
 
 #header h1 {
@@ -85,7 +93,6 @@ ul li {
 #hero .heading {
   width: 70%;
   max-width: 900px;
-  border: 1px solid;
   position: relative;
   top: 200px;
   text-align: center;
@@ -108,17 +115,22 @@ ul li {
 }
 
 .btn-container button {
-  padding: 15px 25px;
-  font-size: 16px;
+  padding: 17px 27px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--whiteColor);
-  background-color: var(--cta);
-  border: 2px solid var(--primary);
+  background-color: var(--accent);
+  border: 2px solid var(--bgColor);
   border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.267);
+}
+
+.btn-container button:active {
+  transform: scale(0.95);
 }
 
 #details {
-  width: 50%;
+  width: 55%;
   max-width: 700px;
   border: 1px solid;
   position: relative;
@@ -135,34 +147,68 @@ ul li {
   border: 1px solid rgba(221, 0, 83, 0.3);
 }
 
+.address, .hours {
+  display: flex;
+  align-content: center;
+}
+
+.address .icon,
+.hours .icon {
+  width: 45px;
+  height: 28px;
+  border: 1px solid;
+}
+
 /*____MenuPage Styling____*/
 .hero {
-  margin-block: 23px;
+  margin-block: 25px 35px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .hero h1 {
-  font-size: 35px;
+  font-family: 'Sansita Swashed';
+  font-size: 40px;
   text-align: center;
 }
 
+/* .hero h1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 25%;
+  width: 50%;
+  height: 2px;
+  background-color: var(--accent);
+} */
+
+.icon {
+  height: 50px;
+  width: 50px;
+  margin-left: -7px;
+} 
+
 .menu-container {
-  border: 1px solid ;
+  margin: auto;
+  padding-bottom: 20px;
+  max-width: 1300px;
+  /* border: 1px solid; */
 }
 
 h1.menu-type {
   display: block;
-  /* font-size: 40px; */
+  font-size: 25px;
   text-align: center;
-  margin-bottom: 20px;
-  /* border: 1px solid; */
+  margin-bottom: 25px;
 }
 
 .meals {
-  width: 90%;
+  width: 92%;
   margin: auto;
   margin-bottom: 28px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* border: 1px solid; */
 }
 
@@ -172,7 +218,7 @@ h1.menu-type {
   padding: 20px;
   border-radius: 20px;
   /* From https://css.glass */
-  background: rgba(201, 104, 24, 0.24);
+  background: var(--bgColor);
   border-radius: 16px;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(4.3px);
@@ -182,8 +228,9 @@ h1.menu-type {
 
 .meal-box h3 {
   font-weight: 900;
+  color: var(--accent);
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .meal-box p {
@@ -205,13 +252,23 @@ h1.menu-type {
   border: 1px solid rgba(201, 104, 24, 0.27);
 }
 
+.contact-container .span {
+  /* display: flex; */
+}
+
+.contact-container .icon {
+  width: 45px;
+  height: 28px;
+  border: 1px solid;
+}
+
 p {
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 23px;
+  margin-bottom: 6px;
 }
 
 .day {
-  color: #c96818;
+  color: var(--accent);
   margin-right: 7px;
 }
 
@@ -222,4 +279,42 @@ form {
   justify-content: space-between;
   margin-top: 15px;
 }
+
+form h3 {
+  font-size: 26px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+input {
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding: 8px;
+  border: unset;
+  border: 1px solid var(--accent);
+  outline: none;
+}
+
+#message {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid var(--accent);
+  outline: none;
+}
+
+#mssgBtn {
+  width: 180px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 15px 10px;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 10px;
+}
+
+#mssgBtn:active {
+  transform: scale(0.95);
+}
+
 
