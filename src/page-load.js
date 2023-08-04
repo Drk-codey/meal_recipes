@@ -2,8 +2,6 @@ function createHeader(id) {
   const header = document.createElement("header");
   header.setAttribute("id", id);
 
-  
-
   // Append navlink into header
   const navbar = createNavLink();
   header.appendChild(navbar);
@@ -18,10 +16,26 @@ function createlink(id, text) {
   return link;
 }
 
+function createHamBurger() {
+  const hamburger = document.createElement('div');
+  hamburger.setAttribute("id", "hamburger")
+  
+  // Add 3 lines to the hamburger menu 
+  hamburger.insertAdjacentHTML("beforeend", `
+    <div class="line" id="line1"></div>
+    <div class="line" id="line2"></div>
+    <div class="line" id="line3"></div>
+  `);
+
+  return hamburger
+}
+
 function createNavLink() {
   const nav = document.createElement('nav');
   const navLink = document.createElement('ul');
+  const navContainer = document.createElement('div');
   nav.setAttribute('id', 'nav');
+  navContainer.setAttribute('id', "navContainer")
 
   // Header Logo
   const rtnName = document.createElement('h1');
@@ -31,12 +45,15 @@ function createNavLink() {
   const homebtn = createlink('home', 'Home');
   const menubtn = createlink('menu', 'Menu');
   const contact = createlink('contact', 'Contact');
-  
+  const hamburger = createHamBurger();
+
   navLink.appendChild(homebtn);
   navLink.appendChild(menubtn);
   navLink.appendChild(contact);
   
-  nav.appendChild(navLink);
+  navContainer.appendChild(navLink);
+  nav.appendChild(navContainer);
+  nav.appendChild(hamburger);
 
   return nav;
 }
