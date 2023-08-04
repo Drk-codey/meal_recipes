@@ -5,6 +5,7 @@ function menuPage() {
     <section id="menu">
       <div class="hero">
         <h1>Menu</h1>
+        <img src="./img/chef.svg" alt="Chef" class="icon" />
       </div>
     
       <div class="menu-container">

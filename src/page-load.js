@@ -1,10 +1,8 @@
-function createHeader(id, text) {
+function createHeader(id) {
   const header = document.createElement("header");
   header.setAttribute("id", id);
 
-  const rtnName = document.createElement('h1');
-  rtnName.textContent = text;
-  header.appendChild(rtnName);
+  
 
   // Append navlink into header
   const navbar = createNavLink();
@@ -25,14 +23,19 @@ function createNavLink() {
   const navLink = document.createElement('ul');
   nav.setAttribute('id', 'nav');
 
+  // Header Logo
+  const rtnName = document.createElement('h1');
+  rtnName.textContent = "elege";
+  nav.appendChild(rtnName);
+  
   const homebtn = createlink('home', 'Home');
   const menubtn = createlink('menu', 'Menu');
   const contact = createlink('contact', 'Contact');
-
+  
   navLink.appendChild(homebtn);
   navLink.appendChild(menubtn);
   navLink.appendChild(contact);
-
+  
   nav.appendChild(navLink);
 
   return nav;
@@ -50,7 +53,7 @@ function initializePage() {
   const content = document.getElementById('content');
 
   // Append element to page
-  const header = createHeader('header', "elege")
+  const header = createHeader('header')
   content.appendChild(header);
 
   // Append contentcontainer to Page

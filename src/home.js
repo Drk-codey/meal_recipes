@@ -14,18 +14,20 @@ function homePage() {
       </div>
 
       <div id="details">
-        <!-- <div class="addressIcon">
-          <img src="/dist/img/address-svgrepo-com.svg" alt="">
-        </div> --!>
         <div class="address">
-          <p>123 Savory Street, Aromaland, Lagos,Nigeria</p>
+          <span>
+            <img src="./img/address.svg" alt="" class="icon">
+          </span>
+          <div class="detail">
+            <p>123 Savory Street, Aromaland, Lagos, Nigeria</p>
+          </div>
         </div>
         <div class="hours">
-          <!-- <div class="timeIcon">
-            <img src="/dist/img/chef-svgrepo-com.svg" alt="">
-          </div> -->
-          <p><span class="day">Mon-Thurs:</span>8am-8pm</p>
-          <p><span class="day">Fri-Sun:</span>8am-11pm</p>
+          <img src="./img/time.svg" alt="" class="icon">
+          <div class="detail">
+            <p><span class="day">Mon-Thurs:</span>8am-8pm</p>
+            <p><span class="day">Fri-Sun:</span>8am-11pm</p>
+          </div>
         </div>
       </div>
     </section>
