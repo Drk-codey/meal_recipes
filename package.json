@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "This project for a recipe website that showcases a delightful collection of recipes for varoius cuisines and occasions built using HTML and CSS.",
   "main": "index.js",
+  "build": "webpack",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   }
