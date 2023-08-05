@@ -9,31 +9,33 @@ function contactPage() {
       
       <div class="contact-container">
         <div id="cntDetail">
-          <p>
+          <div>
             <span>
               <img src="./img/address.svg" alt="" class="icon">
             </span>
-            123 Savory Street, Aromaland, Lagos, Nigeria
-          </p>
+            <p>123 Savory Street, Aromaland, Lagos, Nigeria</p>
+          </div>
           <div>
             <span>
-              <img src="./img/time.svg" alt="" class="icon">
+              <img src="./img/time1.svg" alt="" class="icon">
             </span>
-            <p><span class="day">Mon-Thurs:</span>8am-8pm</p>
-            <p><span class="day">Fri-Sun:</span>8am-11pm</p>
+            <p id="break">
+              <span><span class="day">Mon-Thurs:</span>8am-8pm</span>
+              <span><span class="day">Fri-Sun:</span>8am-11pm</span>
+            </p>
           </div>
-          <p>
+          <div>
             <span>
-            <img src="./img/time.svg" alt="" class="icon">
+            <img src="./img/phone.svg" alt="" class="icon">
             </span>
-            08059997903
-          </p>
-          <p>
+            <p>08059997903</p>
+          </div>
+          <div>
             <span>
-              <img src="./img/time.svg" alt="" class="icon">
+              <img src="./img/mail.svg" alt="" class="icon">
             </span>
-            perfectlyRealEmail@notFake.com
-          </p>
+            <p>perfectlyRealEmail@notFake.com</p>
+          </div>
         </div>
         <form action="">
           <h3>Message Us</h3>
