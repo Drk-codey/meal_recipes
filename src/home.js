@@ -16,15 +16,15 @@ function homePage() {
       <div id="details">
         <div class="address">
           <span>
-            <img src="./img/address.svg" alt="" class="icon">
+            <img src="./img/address.svg" alt="Address" class="icon">
           </span>
-          <div class="detail">
+          <div class="detail-info">
             <p>123 Savory Street, Aromaland, Lagos, Nigeria</p>
           </div>
         </div>
         <div class="hours">
-          <img src="./img/time.svg" alt="" class="icon">
-          <div class="detail">
+          <img src="./img/time1.svg" alt="Time" class="icon">
+          <div class="detail-info">
             <p><span class="day">Mon-Thurs:</span>8am-8pm</p>
             <p><span class="day">Fri-Sun:</span>8am-11pm</p>
           </div>
