@@ -60,7 +60,6 @@ div#content {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid;
 }
 
 #header h1 {
@@ -92,7 +91,6 @@ div#content {
 }
 
 #hero {
-  /* min-height: 88vh; */
   position: relative;
 }
 
@@ -215,7 +213,6 @@ div#content {
   margin: auto;
   padding-bottom: 20px;
   max-width: 1300px;
-  /* border: 1px solid; */
 }
 
 h1.menu-type {
@@ -231,7 +228,6 @@ h1.menu-type {
   margin-bottom: 28px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid;
 }
 
 .meal-box {
@@ -287,12 +283,10 @@ h1.menu-type {
   height: 30px;
   filter: var(--filterColor);
   margin: 4px 8px 0 0;
-  /* border: 1px solid; */
 }
 
 #cntDetail p {
   font-size: 23px;
-  /* border: 1px solid; */
 }
 
 #break > span {
@@ -354,12 +348,9 @@ input {
 /*__Responsive Media Queries__*/
 
 /* 1200px / 16px = 75em */
-@media only screen and (max-width: 1200px) {
-   header {
-    /* font-size: 59%; */
-    /* display: none; */
-  }
-}
+/* @media only screen and (max-width: 1200px) {
+
+} */
 
 /* 980px / 16px = 61.25em */
 @media only screen and (max-width: 980px) {
@@ -373,7 +364,6 @@ input {
     width: 45px;
     height: 36px;
     cursor: pointer;
-    /* padding-block: 5px; */
     position: relative;
     border: 1px solid;
   }
@@ -451,7 +441,6 @@ input {
   #hero .heading {
     width: 95%;
     top: 150px;
-    /* border: 1px solid; */
   }
 
   #details {
