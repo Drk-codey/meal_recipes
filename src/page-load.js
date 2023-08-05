@@ -35,6 +35,7 @@ function createNavLink() {
   const navLink = document.createElement('ul');
   const navContainer = document.createElement('div');
   nav.setAttribute('id', 'nav');
+  navLink.setAttribute('id', "navLinks")
   navContainer.setAttribute('id', "navContainer")
 
   // Header Logo

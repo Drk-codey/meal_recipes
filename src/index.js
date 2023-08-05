@@ -16,6 +16,17 @@ function addNavEvents() {
   contactbtn.addEventListener('click', contactPage);
 }
 
+// Display Navbar when hambumger is toggled
+function toggleHamburger() {
+  const hamburgerbtn = document.getElementById('hamburger');
+  const navContainer = document.getElementById('navContainer');
+
+  console.log(navContainer);
+  hamburgerbtn.addEventListener('click', function() {
+    navContainer.classList.toggle("change");
+    hamburgerbtn.classList.toggle("change");
+  });
+}
 
 
 function init() {
@@ -24,4 +35,5 @@ function init() {
   // menuPage();
   // contactPage();
   addNavEvents();
+  toggleHamburger()
 }
